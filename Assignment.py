@@ -67,8 +67,8 @@ def find_bigram(target_message):
     word_tokens = nltk.word_tokenize(message)
     lemmatized_message = []
     p = 1
-    for ms in word_tokens:
-        lemmatized_message.append(nltk.WordNetLemmatizer().lemmatize(ms))
+    for mess in word_tokens:
+        lemmatized_message.append(nltk.WordNetLemmatizer().lemmatize(mess))
     bigram_message=list(nltk.ngrams(lemmatized_message, 2))
     return bigram_message
 
